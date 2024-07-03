@@ -1,57 +1,57 @@
-/*Url*/
-
+/* Importar fonte */
 @import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 
-/*Css*/
-
+/* CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lora", sans-serif;
+  font-family: "Space Mono", monospace;
   text-decoration: none;
 }
 
 :root {
-  --cor-primaria: #E09F3E;
-  --cor-secundaria: #e09f3ed5;
-  --cor-tercearia: #353238;
-  --cor-quarternaria: #92140C;
+  --cor-primaria: #d5b991;
+  --cor-secundaria: #ece3d4;
+  --cor-tercearia: #4a381b;
+  --cor-quarternaria: #c5b091;
+  --cor-quinternaria: #e6d4bc;
+  --cor-p: #b28755;
 }
 
 /* CSS Simplificado */
 body {
-  background-image: linear-gradient(var(--cor-tercearia), var(--cor-quarternaria));
+  background-color: var(--cor-secundaria);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-image: radial-gradient(var(--cor-tercearia), var(--cor-quarternaria));
-  color: white;
+  background-color: var(--cor-primaria);
   display: flex;
   align-items: center;
   padding: 10px 20px;
 }
 
 header a {
-  color: white;
+  color: var(--cor-tercearia);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
   justify-content: center;
-  margin-right: 48%;
+  margin-right: 44%;
 }
 
 nav a {
   margin-left: auto;
   margin-right: 10px;
-  color: var(--cor-secundaria);
+  color: var(--cor-tercearia);
   text-decoration: none;
+  font-family: "Space Mono", monospace;
 }
 
 nav a:hover {
-  color: var(--cor-primaria);
+  color: #4a381bc2;
 }
 
 main {}
@@ -59,12 +59,9 @@ main {}
 .search-section {
   text-align: center;
   padding: 40px;
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
-  color: #000;
-}
-
-.search-section::before {
-  filter: blur(80px);
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
 }
 
 .search-section h1 {
@@ -80,7 +77,7 @@ main {}
 .search-form {
   display: flex;
   justify-content: center;
-  background-color: white;
+  border: 1px solid var(--cor-tercearia);
   border-radius: 25px;
   overflow: hidden;
 }
@@ -94,14 +91,14 @@ main {}
 
 .search-form button {
   background-color: var(--cor-primaria);
-  color: white;
+  color: var(--cor-tercearia);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
 }
 
 .search-form button:hover {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-quarternaria);
 }
 
 .beats-section {
@@ -111,10 +108,11 @@ main {}
 .beats-section h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: var(--cor-tercearia);
 }
 
 .beats-section p {
-  color: #9b9b9b;
+  color: var(--cor-p);
   margin-bottom: 20px;
 }
 
@@ -125,7 +123,8 @@ main {}
 }
 
 .beat-card {
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -143,10 +142,11 @@ main {}
   font-size: 18px;
   margin: 0;
   padding-left: 5px;
+  color: var(--cor-tercearia);
 }
 
 .beat-card p {
-  color: #383838;
+  color: var(--cor-p);
   font-size: 14px;
   margin: 10px 0;
   padding-left: 5px;
@@ -155,12 +155,13 @@ main {}
 .beat-card .price {
   font-weight: bold;
   padding-left: 5px;
-  color: #000;
+  color: var(--cor-tercearia);
 }
 
 .beat-card button {
-  background-image: linear-gradient(var(--cor-tercearia), var(--cor-quarternaria));
-  color: #000;
+  background-color: var(--cor-quarternaria);
+  border: 1px solid var(--cor-quinternaria);
+  color: var(--cor-tercearia);
   border: none;
   border-radius: 10px;
   padding: 10px;
@@ -170,9 +171,9 @@ main {}
 }
 
 .beat-card button:hover {
-  background: transparent;
-  color: #000;
-  border: 2px solid #000;
+  background-color: var(--cor-quinternaria);
+  border: 1px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
 }
 
 .genres-section {
@@ -182,10 +183,11 @@ main {}
 .genres-section h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: var(--cor-tercearia);
 }
 
 .genres-section p {
-  color: #9b9b9b;
+  color: var(--cor-p);
   margin-bottom: 20px;
 }
 
@@ -196,7 +198,9 @@ main {}
 }
 
 .genre-card {
-  background-color: white;
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -211,12 +215,12 @@ main {}
 }
 
 .genre-card span {
-  color: #333;
+  color: var(--cor-tercearia);
   font-weight: bold;
 }
 
 footer .socials {
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
+  background-color: var(--cor-primaria);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,12 +235,13 @@ footer .socials i {
 }
 
 footer .socials i:hover {
-  color: #535353;
+  color: var(--cor-p);
 }
 
 footer p {
   font-size: 14px;
   font-weight: bold;
+  color: var(--cor-tercearia);
 }
 
 
@@ -247,6 +252,7 @@ footer p {
 .beats-section-genero {
   margin: 10px;
   box-sizing: border-box;
+  background-color: var(--cor-secundaria);
 }
 
 .heading {
@@ -256,6 +262,8 @@ footer p {
   font-size: 2em;
   margin-bottom: 20px;
   margin-left: 10px;
+  color: var(--cor-tercearia);
+  font-family: "Space Mono", monospace;
 }
 
 .carousel-container-genero {
@@ -269,10 +277,11 @@ footer p {
 }
 
 .beat-card-genero {
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
   flex: 0 0 auto;
   width: 250px;
   margin: 0 10px;
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -291,35 +300,38 @@ footer p {
 .title {
   font-size: 1.5rem;
   margin: 10px 0;
+  color: var(--cor-tercearia);
+  font-family: "Space Mono", monospace;
 }
 
 .genre {
-  color: #fff;
+  color: var(--cor-p);
   margin-bottom: 15px;
 }
 
 .price {
-  color: #fff;
+  color: var(--cor-tercearia);
   font-weight: bold;
   margin-right: 2px;
   padding-top: 12px;
   padding-left: 1px;
   padding-right: 1px;
+  font-family: "Space Mono", monospace;
 }
 
 .btn-price {
-  color: #fff;
-  border: none;
+  background-color: var(--cor-quarternaria);
+  border: 2px solid var(--cor-quinternaria);
   width: 100px;
-  height: 38px;
-  background-color: var(--cor-tercearia);
+  height: 55px;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .btn-price:hover {
-  color: #000;
-  background-color: #353238ea;
+  background-color: var(--cor-quinternaria);
+  border: 1px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
 }
 
 .icon-pred {
@@ -327,7 +339,7 @@ footer p {
 }
 
 .icon {
-  color: #000;
+  color: var(--cor-tercearia);
   background: none;
   border: none;
   cursor: pointer;
@@ -338,7 +350,7 @@ footer p {
 
 .icon:hover {
   background: transparent;
-  color: #fff;
+  color: var(--cor-p);
   border-radius: 50%;
 }
 
@@ -346,9 +358,11 @@ footer p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  font-size: 2rem;
+  background-color: #b28755cf;
+  border: 1px solid var(--cor-p);
+  border-radius: 1000px;
+  font-size: 1.2rem;
+  font-weight: bold;
   cursor: pointer;
   padding: 10px;
   z-index: 10;
@@ -363,7 +377,7 @@ footer p {
 }
 
 .carousel-button-genero:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #b28755f0;
 }
 
 /* Pagina genêro - Artistas */
@@ -373,6 +387,7 @@ footer p {
 
 .section-artists {
   width: 100%;
+  background-color: var(--cor-secundaria);
 }
 
 .container-artists {
@@ -385,11 +400,12 @@ footer p {
 }
 
 .title-artists {
+  font-family: "Space Mono", monospace;
   display: flex;
   justify-content: flex-start;
   margin-left: 5px;
   font-size: 2em;
-  color: #000;
+  color: var(--cor-tercearia);
 }
 
 .slider-container {
@@ -406,7 +422,8 @@ footer p {
 }
 
 .card-artists {
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
   min-width: 20%;
   box-sizing: border-box;
   text-align: center;
@@ -424,7 +441,7 @@ footer p {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #ccc;
+  border: 5px solid var(--cor-p);
 }
 
 .text-center-artists {
@@ -433,17 +450,22 @@ footer p {
 
 .name-artists {
   font-size: 1.2em;
-  color: #333;
+  color: var(--cor-tercearia);
+  font-family: "Space Mono", monospace;
 }
 
 .role-artists {
   font-size: 1em;
-  color: #9b9b9b;;
+  color: var(--cor-p);
+  font-family: "Space Mono", monospace;
 }
 
 .description-artists {
   margin-top: 10px;
-  color: #fff;
+  color: var(--cor-tercearia);
+  font-family: "Space Mono", monospace;
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .button-wrap-artists {
@@ -455,32 +477,36 @@ footer p {
 }
 
 .button-artists {
+  font-family: "Space Mono", monospace;
   text-decoration: none;
   padding: 10px 20px;
-  background-color: var(--cor-primaria);
-  color: #000;
+  background-color: var(--cor-quarternaria);
+  border: 2px solid var(--cor-quinternaria);
+  color: var(--cor-tercearia);
   border-radius: 5px;
 }
 
 .button-artists:hover {
-  background-color: var(--cor-secundaria);
-  color: #fff;
+  background-color: var(--cor-quinternaria);
+  border: 1px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
 }
 
 button#prev, button#next {
   position: absolute;
-  top: 50%;
+  top: 66%;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  font-size: 2rem;
+  background-color: #b28755cf;
+  border: 1px solid var(--cor-p);
+  border-radius: 1000px;
+  font-size: 1.2rem;
   cursor: pointer;
   padding: 10px;
   z-index: 10;
 }
 
 button#prev:hover, button#next:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #b28755f0;
 }
 
 button#prev {
@@ -488,7 +514,7 @@ button#prev {
 }
 
 button#next {
-  right: 10px;
+  right: 2px;
 }
 
 
@@ -503,7 +529,8 @@ button#next {
 }
 
 .content-upload {
-  background-image: linear-gradient(var(--cor-secundaria), #ff9900c5);
+  background-color: var(--cor-quinternaria);
+  border: 2px solid var(--cor-quarternaria);
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -516,10 +543,11 @@ button#next {
 .title-upload {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+  color: var(--cor-tercearia);
 }
 
 .subtitle-upload {
-  color: #fff;
+  color: var(--cor-p);
   margin-bottom: 1.5em;
 }
 
@@ -542,8 +570,8 @@ button#next {
 .input-file-upload, .input-text-upload, .textarea-upload, .select-upload {
   width: 100%;
   padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid var(--cor-tercearia);
+  border-radius: 10px;
 }
 
 .btn-icon-upload {
@@ -593,7 +621,14 @@ button#next {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
-  color: #fff;
+  background-color: var(--cor-quarternaria);
+  border: 2px solid var(--cor-quinternaria);
+  color: var(--cor-tercearia);
   cursor: pointer;
+}
+
+.btn-upload:hover {
+  background-color: var(--cor-quinternaria);
+  border: 1px solid var(--cor-quarternaria);
+  color: var(--cor-tercearia);
 }
