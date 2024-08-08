@@ -1,15 +1,18 @@
-/*Url*/
-
-@import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
-
-/*Css*/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lora", sans-serif;
+    font-family: "Space Mono", monospace;
     text-decoration: none;
+}
+
+:root {
+    --cor-primaria: #d5b991;
+    --cor-secundaria: #ece3d4;
+    --cor-tercearia: #4a381b;
+    --cor-quarternaria: #c5b091;
+    --cor-quinternaria: #e6d4bc;
+    --cor-p: #b28755;
 }
 
 /* Estilo para a div flutuante */
@@ -20,31 +23,30 @@
 
 /* Css Player*/
 .music-player {
-    --primary-color: #ddd;
-    --secondary-color: #999;
-    --blue-color: #003153;
+    background-color: var(--cor-primaria);
+    border: 2px solid var(--cor-p);
+    color: var(--cor-tercearia);
     --pading: 1em;
-    background-color: #111;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed; /* Alteração: posição fixa */
     top: 78%; /* Fixa no topo */
-    left: 0;
-    width: 100%; /* Ocupa toda a largura */
+    left: 10px;
+    width: 99%; /* Ocupa toda a largura */
     height: 8rem;
     padding: var(--pading);
-    color: var(--primary-color);
+    border-radius: 50px;
     z-index: 9999; /* Valor alto para garantir que fique por cima de outros elementos */
 }
 
 
 i {
-    color: var(--secondary-color);
+    color: var(--cor-tercearia);
 }
 
 i:hover {
-    color: var(--primary-color);
+    color: var(--cor-p);
 }
 
 .song-bar {
@@ -88,6 +90,7 @@ i:hover {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .title:hover,
@@ -96,7 +99,7 @@ i:hover {
 }
 
 .artist {
-    color: var(--secondary-color);
+    color: var(--cor-tercearia);
 }
 
 .icons {
@@ -114,7 +117,7 @@ i:hover {
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    color: var(--secondary-color);
+    color: var(--cor-tercearia);
 }
 
 .control-buttons {
@@ -127,16 +130,17 @@ i:hover {
 .play-pause {
     display: inline-block;
     padding: 1em;
-    border: 2px solid #fff;
+    border: 2px solid var(--cor-p); border: 2px solid var(--cor-p);
     background-color: transparent;
-    color: #fff;
+    color: var(--cor-p);
     border-radius: 100%;
 }
 
 .play-pause:hover {
     transform: scale(1.1);
-    color: #fff;
-    background-color: #ffffff2a;
+    color: var(--cor-tercearia);
+    background-color: var(--cor-p);
+    border: 2px solid var(--cor-p);
     border-radius: 100%;
 }
 
@@ -166,25 +170,25 @@ i:hover {
 }
 
 .progress-bar:hover .progress {
-    background-color: var(--blue-color);
+    background-color: var(--cor-tercearia);
 }
 
 #progress {
     -webkit-appearance: none;
     width: 100%;
     height: 6px;
-    background: var(--blue-color);
+    background: var(--cor-p);
     overflow: hidden;
     cursor: pointer;
 }
 
 #progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: blue;
+    background: var(--cor-tercearia);
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    box-shadow: -400px 0 0 400px blue;
+    box-shadow: -400px 0 0 400px var(--cor-tercearia);
 }
 
 /* Estilos para a barra de volume */
@@ -211,7 +215,7 @@ i:hover {
     -moz-appearance: none;
     appearance: none;
     height: 5px;
-    background-color: var(--blue-color);
+    background-color: var(--cor-p);
     overflow: hidden;
     border-radius: 10px;
     -webkit-transition: .2s;
@@ -221,10 +225,10 @@ i:hover {
 
 .volume-progress-bar::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background: blue;
+    background: var(--cor-tercearia);
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 10px solid black;
-    box-shadow: -400px 0 0 400px blue;
+    border: 10px solid var(--cor-tercearia);
+    box-shadow: -400px 0 0 400px var(--cor-tercearia);
 }

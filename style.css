@@ -1,5 +1,4 @@
-/* Importar fonte */
-@import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Allura&display=swap');
 
 /* CSS */
 * {
@@ -223,8 +222,7 @@ footer .socials {
   background-color: var(--cor-primaria);
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-start;
   margin-bottom: 10px 0;
 }
 
@@ -232,6 +230,7 @@ footer .socials i {
   font-size: 35px;
   cursor: pointer;
   transition: color 0.3s ease;
+  margin-left: 20px;
 }
 
 footer .socials i:hover {
@@ -242,6 +241,18 @@ footer p {
   font-size: 14px;
   font-weight: bold;
   color: var(--cor-tercearia);
+  margin-left: 25%;
+}
+
+
+footer .dev {
+  margin-left: 15%;
+}
+
+footer .dev span {
+  font-family: "Allura", cursive;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 
